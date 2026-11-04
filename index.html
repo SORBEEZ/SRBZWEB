@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet Sorbeez: vitamins with a twist, dreamed up by student entrepreneurs.">
+  <title>Sorbeez — Vitamins with a twist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Sorbeez home"><span class="brand-name">Sorbeez</span></a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html">Team</a><a href="faq.html">FAQ</a>
+      </div>
+      <a class="cart-link" href="cart.html" aria-label="Shopping cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+        Cart <span class="cart-count" data-cart-count aria-label="0 items in cart">0</span>
+      </a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-logo" src="images/sorbeez-logo.jpg" alt="Sorbeez rainbow logo" width="1265" height="280">
+          <span class="eyebrow">A little joy in every pouch</span>
+          <h1 class="hero-title">Vitamins with a twist.</h1>
+          <p class="lead hero-subtitle">DELICIOUS! NUTRITIOUS! CONVENIENT!</p>
+          <div class="hero-actions"><a class="button button-soft button-bounce" href="shop.html">Explore the Flavors <span aria-hidden="true">→</span></a><span class="hero-note">Dreamed up by student entrepreneurs.</span></div>
+        </div>
+        <div class="hero-art" role="group" aria-label="Meet the Sorbeez pouch mascot. A hidden mango is tucked inside.">
+          <button class="treasure-fruit treasure-hero" type="button" data-treasure="mango" aria-label="Find the hidden mango"><svg class="fruit-character fruit-character-mango" viewBox="0 0 100 100" aria-hidden="true"><path class="fruit-body" d="M50 24c-9-13-24-11-31 1-12 21 4 54 28 58 26 4 43-27 31-49-6-12-19-17-28-10Z"/><path class="fruit-leaf" d="M50 25c-1-15 12-22 28-19-3 13-13 22-28 19Z"/><circle class="face-eye" cx="43" cy="50" r="3"/><circle class="face-eye" cx="58" cy="50" r="3"/><path class="face-smile" d="M44 59c4 6 10 6 14 0"/></svg></button>
+          <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+          <span class="sparkle sparkle-three" aria-hidden="true">✦</span>
+          <div class="packet" aria-hidden="true">
+            <div class="packet-face">
+              <div class="packet-eyes"><i></i><i></i></div>
+              <div class="packet-smile"></div>
+              <div class="packet-label">Sorbeez</div>
+              <div class="packet-sub">fruit sorbet</div>
+            </div>
+          </div>
+          <span class="hero-art-caption">Hi, flavor explorer!</span>
+        </div>
+      </div>
+    </section>
+    <section class="flavor-maker-section" id="flavor-maker" aria-labelledby="flavor-maker-title">
+      <div class="container">
+        <div class="flavor-maker-heading">
+          <span class="eyebrow">Your turn, flavor explorer!</span>
+          <h2 id="flavor-maker-title">Make a pretend sorbet scoop</h2>
+          <p>Pick a flavor, then add your favorite fruity toppings. Drag them to the bowl or tap to play!</p>
+        </div>
+        <div class="flavor-maker">
+          <div class="maker-controls">
+            <fieldset class="maker-choice-group">
+              <legend>1. Pick your scoop</legend>
+              <div class="maker-choices">
+                <button class="maker-choice" type="button" draggable="true" data-maker-flavor="mango" aria-pressed="true"><svg class="fruit-picker-character fruit-character-mango" viewBox="0 0 100 100" aria-hidden="true"><path class="fruit-body" d="M50 24c-9-13-24-11-31 1-12 21 4 54 28 58 26 4 43-27 31-49-6-12-19-17-28-10Z"/><path class="fruit-leaf" d="M50 25c-1-15 12-22 28-19-3 13-13 22-28 19Z"/><circle class="face-eye" cx="43" cy="50" r="3"/><circle class="face-eye" cx="58" cy="50" r="3"/><path class="face-smile" d="M44 59c4 6 10 6 14 0"/></svg> Mango</button>
+                <button class="maker-choice" type="button" draggable="true" data-maker-flavor="berry" aria-pressed="false"><svg class="fruit-picker-character fruit-character-strawberry" viewBox="0 0 100 100" aria-hidden="true"><path class="fruit-body" d="M50 31c-17-13-37-4-35 16 1 17 20 38 35 45 15-7 34-28 35-45 2-20-18-29-35-16Z"/><path class="fruit-leaf" d="M50 34C35 27 26 19 29 10c10 2 17 8 21 16 3-10 10-17 20-18 2 10-5 20-20 26Z"/><circle class="face-eye" cx="43" cy="55" r="3"/><circle class="face-eye" cx="58" cy="55" r="3"/><path class="face-smile" d="M44 64c4 6 9 6 13 0"/></svg> Berry</button>
+                <button class="maker-choice" type="button" draggable="true" data-maker-flavor="blueberry" aria-pressed="false"><svg class="fruit-picker-character fruit-character-blueberry" viewBox="0 0 100 100" aria-hidden="true"><circle class="fruit-body" cx="50" cy="53" r="34"/><path class="fruit-crown" d="m39 24 3-10 8 8 8-8 3 10-11 7Z"/><circle class="face-eye" cx="43" cy="51" r="3"/><circle class="face-eye" cx="58" cy="51" r="3"/><path class="face-smile" d="M44 60c4 6 9 6 13 0"/></svg> Blueberry</button>
+                <button class="maker-choice" type="button" draggable="true" data-maker-flavor="peach" aria-pressed="false"><svg class="fruit-picker-character fruit-character-peach" viewBox="0 0 100 100" aria-hidden="true"><path class="fruit-body" d="M50 31c-12-14-36-7-37 16-2 24 15 42 37 42s39-18 37-42c-1-23-25-30-37-16Z"/><path class="fruit-seam" d="M50 32c-7 12-8 34 0 55"/><path class="fruit-leaf" d="M51 30c2-17 15-23 29-19-4 14-14 21-29 19Z"/><circle class="face-eye" cx="42" cy="54" r="3"/><circle class="face-eye" cx="58" cy="54" r="3"/><path class="face-smile" d="M44 63c4 6 9 6 13 0"/></svg> Peach</button>
+              </div>
+            </fieldset>
+            <fieldset class="maker-choice-group">
+              <legend>2. Add toppings</legend>
+              <div class="maker-choices">
+                <button class="maker-choice" type="button" draggable="true" data-maker-topping="strawberry"><span class="topping-icon" aria-hidden="true"><span class="topping-visual topping-visual-strawberry"></span></span> Berry bits</button>
+                <button class="maker-choice" type="button" draggable="true" data-maker-topping="pineapple"><span class="topping-icon" aria-hidden="true"><span class="topping-visual topping-visual-pineapple"></span></span> Pineapple</button>
+                <button class="maker-choice" type="button" draggable="true" data-maker-topping="sparkles"><span class="topping-icon" aria-hidden="true"><span class="topping-visual topping-visual-sprinkles"></span></span> Magic sprinkles</button>
+              </div>
+            </fieldset>
+            <p class="maker-note">Just pretend play—sprinkles are screen decorations, not a real recipe or vitamin supplement.</p>
+          </div>
+          <div class="maker-play-area">
+            <div class="maker-dropzone" data-maker-dropzone aria-label="Your pretend sorbet bowl">
+              <span class="bowl-scoop" data-maker-scoop aria-hidden="true"><span class="scoop-face"><i></i><i></i><b></b></span></span>
+              <span class="bowl-toppings" data-maker-toppings aria-hidden="true"></span>
+              <span class="bowl-shape" aria-hidden="true"></span>
+            </div>
+            <p class="bowl-label" data-maker-label>Your mango scoop!</p>
+            <p class="maker-status" data-maker-status aria-live="polite">Mango scoop ready! Pick some toppings.</p>
+            <button class="button button-small maker-reset" type="button" data-maker-reset>Start over</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-intro"><span class="eyebrow">Small pouch, big smiles</span><h2>Feel-good thinking, made fruity.</h2><p>Our student team is exploring a fun new way to bring fruit and kid-friendly nutrition together. Product formulation and nutrition details are still being developed.</p><button class="treasure-fruit treasure-inline" type="button" data-treasure="strawberry" aria-label="Find the hidden strawberry"><svg class="fruit-character fruit-character-strawberry" viewBox="0 0 100 100" aria-hidden="true"><path class="fruit-body" d="M50 31c-17-13-37-4-35 16 1 17 20 38 35 45 15-7 34-28 35-45 2-20-18-29-35-16Z"/><path class="fruit-leaf" d="M50 34C35 27 26 19 29 10c10 2 17 8 21 16 3-10 10-17 20-18 2 10-5 20-20 26Z"/><circle class="face-eye" cx="43" cy="55" r="3"/><circle class="face-eye" cx="58" cy="55" r="3"/><path class="face-smile" d="M44 64c4 6 9 6 13 0"/></svg></button></div>
+        <div class="benefits-grid">
+          <article class="card benefit-card"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="15" fill="#58d8f0" stroke="#176c91" stroke-width="3"/><path d="M16 19c2-5 7-8 12-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="25" r="1.8" fill="#173858"/><circle cx="28" cy="25" r="1.8" fill="#173858"/><path d="M20 30c2.5 3 5.5 3 8 0" fill="none" stroke="#173858" stroke-width="2.5" stroke-linecap="round"/></svg></div><h3>Big, Fruity Ideas</h3><p>Our team is dreaming up a frozen treat concept inspired by fruity flavors.</p></article>
+          <article class="card benefit-card"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 29a11 11 0 0 1 11-11 13 13 0 0 1 23 7 9 9 0 0 1-3 17H17A11 11 0 0 1 9 29Z" fill="#fff" stroke="#176c91" stroke-width="2.5"/><path d="M12 27a12 12 0 0 1 22-7" fill="none" stroke="#ff4d7d" stroke-width="5" stroke-linecap="round"/><path d="M13 25a10 10 0 0 1 18-6" fill="none" stroke="#ffbc27" stroke-width="4" stroke-linecap="round"/><path d="M16 24a7 7 0 0 1 12-4" fill="none" stroke="#45c879" stroke-width="3.5" stroke-linecap="round"/><circle cx="25" cy="31" r="1.5" fill="#173858"/><circle cx="32" cy="31" r="1.5" fill="#173858"/><path d="M25 35c2 2 4 2 6 0" fill="none" stroke="#173858" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Nutrition Explorers</h3><p>We’re learning about nutrition. No recipe, vitamins, or nutrition facts are finalized.</p></article>
+          <article class="card benefit-card"><div class="card-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 41 7 25C-1 14 12 5 21 14l3 3 3-3c9-9 22 0 14 11Z" fill="#ff557c" stroke="#a51d55" stroke-width="2.5" stroke-linejoin="round"/><circle cx="19" cy="25" r="1.8" fill="#fff"/><circle cx="29" cy="25" r="1.8" fill="#fff"/><path d="M20 30c2.5 3 5.5 3 8 0" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></div><h3>Made with Teamwork</h3><p>We’re listening to families and learning what they look for in a treat.</p></article>
+        </div>
+        <div class="center-cta"><button class="treasure-fruit treasure-cta" type="button" data-treasure="blueberry" aria-label="Find the hidden blueberry"><svg class="fruit-character fruit-character-blueberry" viewBox="0 0 100 100" aria-hidden="true"><circle class="fruit-body" cx="50" cy="53" r="34"/><path class="fruit-crown" d="m39 24 3-10 8 8 8-8 3 10-11 7Z"/><circle class="face-eye" cx="43" cy="51" r="3"/><circle class="face-eye" cx="58" cy="51" r="3"/><path class="face-smile" d="M44 60c4 6 9 6 13 0"/></svg></button><span class="eyebrow">Pick your happy</span><h2>Which flavor feels like you?</h2><p>Meet the six colorful Sorbeez flavor concepts.</p><a class="button button-soft button-bounce" href="shop.html">Explore the Flavors <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+    <section class="parent-corner" id="parents-corner" aria-labelledby="parent-corner-title">
+      <div class="container parent-corner-inner">
+        <div><span class="eyebrow">For the grown-ups</span><h2 id="parent-corner-title">Parents’ Corner</h2></div>
+        <div>
+          <p>Sorbeez is a student product concept, not a product for sale. The recipe, ingredients, sugar content, allergens, and nutrition facts have not been finalized or verified. Our playful builder is pretend play—not nutrition advice or a health promise.</p>
+          <a class="parent-link" href="faq.html#parents-corner">More project and product details <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+    <p class="treasure-status" data-treasure-status aria-live="polite"></p>
+  </main>
+  <footer class="site-footer"><div class="footer-wrap"><div><a class="footer-brand" href="index.html">Sorbeez</a><p>© <span data-copyright-year>2026</span> Sorbeez. Made with a little extra joy.</p></div><nav class="footer-links" aria-label="Legal"><a href="#parents-corner">Parents’ Corner</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+</body>
+</html>

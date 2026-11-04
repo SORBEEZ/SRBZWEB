@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your Sorbeez flavor concept demo cart. Checkout is coming soon.">
+  <title>Your Cart — Sorbeez</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-label="Sorbeez home"><span>Sorbeez</span></a>
+      <div>
+        <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html">Team</a><a href="faq.html">FAQ</a>
+      </div>
+      <a href="cart.html" aria-current="page" aria-label="Shopping cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+        Cart <span class="cart-count" data-cart-count aria-label="0 items in cart">0</span>
+      </a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><span class="eyebrow">Your flavor picks</span><h1>Your cart.</h1><p class="lead">This is a demo cart for our student flavor concepts. Sorbeez is not shipping or accepting orders yet.</p></div></section>
+    <section class="section cart-section" style="padding-top:1rem">
+      <div class="container">
+        <div class="cart-layout">
+          <section class="cart-panel" aria-label="Cart items">
+            <p class="cart-empty" data-cart-empty hidden>Your cart is empty. Head to the shop and pick a flavor to add.</p>
+            <ul class="cart-items" data-cart-contents aria-live="polite"></ul>
+            <a class="button button-soft" href="shop.html">Continue exploring flavors</a>
+          </section>
+          <aside class="checkout-panel" aria-labelledby="checkout-title">
+            <span class="eyebrow">Not open just yet</span>
+            <h2 id="checkout-title">Checkout</h2>
+            <p>We’re still developing the Sorbeez idea and aren’t ready to ship. No orders or payments can be made yet.</p>
+            <button class="button checkout-button" type="button" disabled>Checkout — Coming Soon</button>
+            <p class="checkout-note">Your cart is only a local demo. It does not reserve or purchase products.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div><div><a href="index.html">Sorbeez</a><p>© <span>2026</span> Sorbeez. Made with a little extra joy.</p></div><nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+</body>
+</html>
