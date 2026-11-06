@@ -348,17 +348,16 @@ document.querySelector("[data-memory-reset]")?.addEventListener("click", resetMe
 if (memoryCards.length === 6) resetMemoryGame();
 
 const quizFlavors = [
-  { id: "mango", name: "Mango glow", hint: "I'm a tropical golden fruit with one big seed. I'm sweet, sunny, and a little bit glowy!" },
-  { id: "strawberry", name: "Strawberry pop", hint: "I'm a bright red berry with tiny seeds on the outside and a leafy little hat!" },
-  { id: "blueberry", name: "Blueberry swirl", hint: "I'm a teeny blue-purple berry who loves to travel in a little bunch!" },
-  { id: "watermelon", name: "Melon mood", hint: "I'm a big green fruit on the outside, pink and juicy on the inside!" },
-  { id: "peach", name: "Peachy keen", hint: "I'm fuzzy, blush-colored, and have a little crease down my middle!" },
-  { id: "citrus", name: "Citrus sparkle", hint: "I'm bright yellow, zippy, and make a wonderfully puckery face!" }
+  { id: "mango", name: "Mango glow", hint: "I’m a tropical fruit with one oversized stone, and my juice likes to make a mess." },
+  { id: "strawberry", name: "Strawberry pop", hint: "I keep my tiny seeds on the outside—a rather unusual place to put them." },
+  { id: "blueberry", name: "Blueberry swirl", hint: "I’m a tiny indigo fruit whose name suggests a color, though wild relatives can wear other shades." },
+  { id: "watermelon", name: "Melon mood", hint: "My striped jacket hides a picnic-colored center. I’m technically a berry, though most people don’t call me one." },
+  { id: "peach", name: "Peachy keen", hint: "A fuzzy cheek, one hard center, and a short season make me a summertime favorite." },
+  { id: "citrus", name: "Citrus sparkle", hint: "Peel me and the scent arrives before the juice; my segments make sharing easy." }
 ];
 const quizHint = document.querySelector("[data-quiz-hint]");
 const quizChoices = document.querySelector("[data-quiz-choices]");
 const quizFeedback = document.querySelector("[data-quiz-feedback]");
-const quizMascot = document.querySelector("[data-quiz-mascot]");
 let quizAnswer = null;
 let quizAnswered = false;
 let lastQuizAnswer = "";
@@ -370,7 +369,6 @@ function startFlavorQuiz() {
   lastQuizAnswer = quizAnswer.name;
   quizAnswered = false;
   quizHint.textContent = quizAnswer.hint;
-  if (quizMascot) quizMascot.src = flavors[quizAnswer.id].image;
   quizFeedback.textContent = "";
   quizChoices.replaceChildren();
   shuffle([quizAnswer, ...shuffle(quizFlavors.filter((flavor) => flavor !== quizAnswer)).slice(0, 2)]).forEach((flavor) => {
