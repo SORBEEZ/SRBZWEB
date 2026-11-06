@@ -1,33 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Meet the 35 student team members behind the Sorbeez classroom business concept.">
-    <link rel="stylesheet" href="style.css">
-<title>Our Team — Sorbeez</title>
-<script src="app.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fffdf6">
+  <meta name="description" content="Meet the 35 student entrepreneurs behind the Sorbeez business project.">
+  <title>Meet the Team — Sorbeez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
 </head>
 <body>
-  <a href="#main">Skip to content</a>
-  <header><nav aria-label="Main navigation">
-    <a href="index.html" aria-label="Sorbeez home"><span>Sorbeez</span></a>
-    <div><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html" aria-current="page">Team</a><a href="faq.html">FAQ</a></div>
-    <a href="cart.html">Cart </a>
+  <div class="announcement">A little more fruit, a lot more fun <span>✦</span> dreamed up by student entrepreneurs</div>
+  <header class="site-header"><nav class="nav-shell" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Sorbeez home"><img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation">☰</button>
+    <div class="nav-links" id="primary-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a class="active" href="team.html">Team</a><a href="faq.html">FAQ</a></div>
+    <div class="nav-actions"><a class="button button-small button-peach nav-shop" href="shop.html">Shop flavors</a><button class="cart-button" type="button" data-open-cart aria-label="Open cart, 0 items"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg><span class="cart-label">Bag</span><span class="cart-count" data-cart-count aria-live="polite">0</span></button></div>
   </nav></header>
-  <main id="main">
-    <section><div><span>35 bright minds, one big idea</span><h1>Meet the team.</h1><p>Our Redondo Union High School student entrepreneurs bring different strengths to every part of the Sorbeez project.</p></div></section>
-    <section><div><div>
-      <section><div><h2>Administration</h2><span>4 members</span></div><div><span>Team Member 01</span><span>Team Member 02</span><span>Team Member 03</span><span>Team Member 04</span></div></section>
-      <section><div><h2>Finance</h2><span>7 members</span></div><div><span>Team Member 05</span><span>Team Member 06</span><span>Team Member 07</span><span>Team Member 08</span><span>Team Member 09</span><span>Team Member 10</span><span>Team Member 11</span></div></section>
-      <section><div><h2>Marketing</h2><span>5 members</span></div><div><span>Team Member 12</span><span>Team Member 13</span><span>Team Member 14</span><span>Team Member 15</span><span>Team Member 16</span></div></section>
-      <section><div><h2>Digital Media</h2><span>3 members</span></div><div><span>Team Member 17</span><span>Team Member 18</span><span>Team Member 19</span></div></section>
-      <section><div><h2>Art &amp; Design</h2><span>4 members</span></div><div><span>Team Member 20</span><span>Team Member 21</span><span>Team Member 22</span><span>Team Member 23</span></div></section>
-      <section><div><h2>Sales</h2><span>4 members</span></div><div><span>Team Member 24</span><span>Team Member 25</span><span>Team Member 26</span><span>Team Member 27</span></div></section>
-      <section><div><h2>Communication</h2><span>4 members</span></div><div><span>Team Member 28</span><span>Team Member 29</span><span>Team Member 30</span><span>Team Member 31</span></div></section>
-      <section><div><h2>Human Resources</h2><span>4 members</span></div><div><span>Team Member 32</span><span>Team Member 33</span><span>Team Member 34</span><span>Team Member 35</span></div></section>
-    </div></div></section>
+  <aside class="sponsor-ticker" aria-label="Sponsor opportunities"><div class="sponsor-ticker-track">
+    <div class="sponsor-ticker-group"><span>Our generous sponsors</span><span class="ticker-flower" aria-hidden="true">✿</span><span>Your brand could be here!</span><span class="ticker-flower" aria-hidden="true">✦</span><a href="sponsors.html">Support student entrepreneurs <span aria-hidden="true">↗</span></a><span class="ticker-flower" aria-hidden="true">♡</span></div>
+    <div class="sponsor-ticker-group" aria-hidden="true"><span>Our generous sponsors</span><span class="ticker-flower">✿</span><span>Your brand could be here!</span><span class="ticker-flower">✦</span><a href="sponsors.html" tabindex="-1">Support student entrepreneurs <span>↗</span></a><span class="ticker-flower">♡</span></div>
+  </div></aside>
+  <main>
+    <section class="page-hero"><p class="eyebrow">35 minds, one sweet idea</p><h1>Meet the <span>Sorbeez crew.</span></h1><p>A student-led business project by Redondo Union High School entrepreneurs, working across eight teams to turn a brainstorm into a brand.</p></section>
+    <section class="content-section">
+      <p class="team-intro">Every name below belongs to a student bringing curiosity, care, and their own kind of sparkle to Sorbeez. Departments reflect the roles provided by our team.</p>
+      <section class="team-department" aria-labelledby="admin-title"><div class="department-heading"><h2 id="admin-title">Administration</h2><span>4 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">CC</span><h3>Callie Chenfu</h3><p>COO</p></article>
+        <article class="team-card"><span class="team-avatar">CD</span><h3>Chloe de Villiers</h3><p>CEO</p></article>
+        <article class="team-card"><span class="team-avatar">SG</span><h3>Santino Giovannetti</h3><p>Admin Executive</p></article>
+        <article class="team-card"><span class="team-avatar">IU</span><h3>Izzy Umphlet</h3><p>Admin Associate</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="finance-title"><div class="department-heading"><h2 id="finance-title">Finance</h2><span>7 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">CH</span><h3>Chace Hoyt</h3><p>Accounting Associate</p></article>
+        <article class="team-card"><span class="team-avatar">LB</span><h3>Lily Bame</h3><p>VP of Finance</p></article>
+        <article class="team-card"><span class="team-avatar">ML</span><h3>Marc Lipov</h3><p>Accounting Associate</p></article>
+        <article class="team-card"><span class="team-avatar">MC</span><h3>Mason Clyne</h3><p>Accounting Associate</p></article>
+        <article class="team-card"><span class="team-avatar">NM</span><h3>Nate Marshall</h3><p>Accounting Associate</p></article>
+        <article class="team-card"><span class="team-avatar">SD</span><h3>Sofia Devos</h3><p>Accounting Associate</p></article>
+        <article class="team-card"><span class="team-avatar">VH</span><h3>Vincent Huynh</h3><p>CFO</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="marketing-title"><div class="department-heading"><h2 id="marketing-title">Marketing</h2><span>5 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">AC</span><h3>Avery Chan</h3><p>VP of Marketing</p></article>
+        <article class="team-card"><span class="team-avatar">BD</span><h3>Brayden Driscoll</h3><p>Marketing Associate</p></article>
+        <article class="team-card"><span class="team-avatar">CK</span><h3>Christopher Kitajima</h3><p>Marketing Associate</p></article>
+        <article class="team-card"><span class="team-avatar">DF</span><h3>Derrin Fowlkes</h3><p>Marketing Associate</p></article>
+        <article class="team-card"><span class="team-avatar">ER</span><h3>Eva Roberts</h3><p>Director of Marketing</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="digital-title"><div class="department-heading"><h2 id="digital-title">Digital Media</h2><span>3 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">EY</span><h3>Ethan Yee</h3><p>DM Associate</p></article>
+        <article class="team-card"><span class="team-avatar">MR</span><h3>Mason Ramirez</h3><p>DM Associate</p></article>
+        <article class="team-card"><span class="team-avatar">SM</span><h3>Sophia McDonald</h3><p>VP of Digital Media/IT</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="art-title"><div class="department-heading"><h2 id="art-title">Art &amp; Design</h2><span>4 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">LB</span><h3>Lili Burke</h3><p>Design Associate</p></article>
+        <article class="team-card"><span class="team-avatar">MB</span><h3>Mackenzie Brock</h3><p>Design Associate</p></article>
+        <article class="team-card"><span class="team-avatar">MT</span><h3>Mychaela Taylor</h3><p>Design Associate</p></article>
+        <article class="team-card"><span class="team-avatar">SZ</span><h3>Syra Zentner</h3><p>VP of Art/Publications</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="sales-title"><div class="department-heading"><h2 id="sales-title">Sales</h2><span>4 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">CM</span><h3>Charlie Menchner</h3><p>Sales Associate</p></article>
+        <article class="team-card"><span class="team-avatar">HF</span><h3>Houston Fine</h3><p>VP of Sales</p></article>
+        <article class="team-card"><span class="team-avatar">TT</span><h3>Tucker Travers</h3><p>Sales Associate</p></article>
+        <article class="team-card"><span class="team-avatar">TB</span><h3>Tyler Bryson</h3><p>Sales Associate</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="comms-title"><div class="department-heading"><h2 id="comms-title">Communication</h2><span>4 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">AG</span><h3>Anthony Gill</h3><p>Communication Associate</p></article>
+        <article class="team-card"><span class="team-avatar">DB</span><h3>Dylan Buchler</h3><p>Communication Associate</p></article>
+        <article class="team-card"><span class="team-avatar">EP</span><h3>Elle Palladino</h3><p>Communication Associate</p></article>
+        <article class="team-card"><span class="team-avatar">WJ</span><h3>Wassim Joudi</h3><p>VP of Communications</p></article>
+      </div></section>
+      <section class="team-department" aria-labelledby="hr-title"><div class="department-heading"><h2 id="hr-title">Human Resources</h2><span>4 team members</span></div><div class="team-grid">
+        <article class="team-card"><span class="team-avatar">BM</span><h3>Brandon Moscol</h3><p>HR Associate</p></article>
+        <article class="team-card"><span class="team-avatar">MH</span><h3>Maddie Han</h3><p>VP of HR</p></article>
+        <article class="team-card"><span class="team-avatar">SM</span><h3>Samantha Mura</h3><p>Director of HR</p></article>
+        <article class="team-card"><span class="team-avatar">TE</span><h3>Tyler Evans</h3><p>HR Associate</p></article>
+      </div></section>
+    </section>
   </main>
-  <footer><div><div><a href="index.html">Sorbeez</a><p>© <span>2026</span> Sorbeez. Made with a little extra joy.</p></div><nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+  <footer class="site-footer"><div class="footer-main">
+    <div class="footer-brand"><a class="brand footer-logo" href="index.html" aria-label="Sorbeez home"><img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span></a><p>Little scoops. Big smiles.<br>A student business project with heart.</p></div>
+    <div class="footer-column"><b>Explore</b><a href="shop.html">Shop flavors</a><a href="story.html">Our story</a><a href="team.html">Meet the team</a><a href="faq.html">FAQs</a></div>
+    <div class="footer-column"><b>Say hello</b><a href="sponsors.html">Become a sponsor</a><a href="story.html">About the student team</a><span class="social-handle">@sorbeezofficial</span></div>
+    <div class="newsletter"><b>A little note from us ✉</b><p>Get project updates and a sprinkle of good news.</p><form data-newsletter-form><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Sign up">→</button></form><small data-newsletter-message aria-live="polite">Demo only—your email won’t be saved.</small></div>
+  </div><div class="footer-bottom"><span>© <span data-year>2026</span> Sorbeez</span><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div></footer>
+  <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title"><div class="dialog-top"><h2 id="cart-title">Your little bag <span>♡</span></h2><button class="icon-button" type="button" data-close-cart aria-label="Close cart">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-bottom"><p data-cart-status aria-live="polite">This is a product concept—not a live checkout.</p><button class="button button-berry button-full" type="button" data-clear-cart>Clear bag</button></div></dialog>
 </body>
 </html>

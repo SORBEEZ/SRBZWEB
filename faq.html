@@ -1,40 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Frequently asked questions about the Sorbeez student product concept.">
-  <title>FAQ — Sorbeez</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fffdf6">
+  <meta name="description" content="Answers to common questions about Sorbeez, the student-created fruit sorbet concept.">
+  <title>Frequently Asked Questions — Sorbeez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
 </head>
 <body>
-  <a href="#main">Skip to content</a>
-  <header><nav aria-label="Main navigation">
-    <a href="index.html" aria-label="Sorbeez home"><span>Sorbeez</span></a>
-    <div><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html">Team</a><a href="faq.html" aria-current="page">FAQ</a></div>
-    <a class="cart-link" href="cart.html" aria-label="Shopping cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>Cart <span class="cart-count" data-cart-count aria-label="0 items in cart">0</span></a>
+  <div class="announcement">A little more fruit, a lot more fun <span>✦</span> dreamed up by student entrepreneurs</div>
+  <header class="site-header"><nav class="nav-shell" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Sorbeez home"><img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation">☰</button>
+    <div class="nav-links" id="primary-links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html">Team</a><a class="active" href="faq.html">FAQ</a></div>
+    <div class="nav-actions"><a class="button button-small button-peach nav-shop" href="shop.html">Shop flavors</a><button class="cart-button" type="button" data-open-cart aria-label="Open cart, 0 items"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg><span class="cart-label">Bag</span><span class="cart-count" data-cart-count aria-live="polite">0</span></button></div>
   </nav></header>
-  <main id="main">
-    <section><div><span>Curious? We’ve got you.</span><h1>Frequently asked questions.</h1><p>A few quick answers about what Sorbeez is—and what we’re still figuring out.</p></div></section>
-    <section><div><div>
-      <details><summary>Is Sorbeez dairy-free?</summary><div><p>Sorbeez is currently a student product concept, and a final recipe has not been developed. We can’t confirm whether a finished product would be dairy-free; always check a verified ingredient and allergen label before consuming a food.</p></div></details>
-      <details><summary>What is the idea behind probiotics?</summary><div><p>Probiotics are one idea the student team is learning about. Sorbeez has no final recipe, and no ingredients or benefits have been verified. It is not a treatment or a substitute for advice from a qualified healthcare professional.</p></div></details>
-      <details><summary>Where are you located?</summary><div><p>We’re a student entrepreneur team at Redondo Union High School in Redondo Beach, California.</p></div></details>
-      <details><summary>Can I buy Sorbeez today?</summary><div><p>Not yet. The flavor cards and cart are a website demo for our student project; no products are for sale and no orders or payments are processed.</p></div></details>
-      <details><summary>What flavors are planned?</summary><div><p>Our current flavor concepts are Mango Sunshine, Strawberry Smile, Blueberry Bounce, Peachy Keen, Tropical Twist, and Raspberry Rocket. Ingredients and nutrition facts remain under development.</p></div></details>
-      <details><summary>Does the cart place an order?</summary><div><p>No. The cart is only a demo counter stored in your browser to show how the interface could work. It does not reserve a product, send your information, or make a purchase.</p></div></details>
-    </div></div></section>
-    <section id="parents-corner" aria-labelledby="parents-faq-title">
-      <div><article>
-        <span>For the grown-ups</span>
-        <h2 id="parents-faq-title">Parents’ Corner</h2>
-        <p>Sorbeez is a student product concept and is not available for purchase. No final product recipe has been developed. Ingredients, sugar content, allergens, vitamin amounts, and nutrition facts are not yet established or verified.</p>
-        <p>References to probiotics or digestion describe ideas the team is exploring—not proven benefits or medical claims. The Flavor Maker is pretend play; its decorative sprinkles do not represent real ingredients or supplements.</p>
-        <p>Before any future product could be offered, its formulation, safety, allergen information, and nutrition labeling would need appropriate review and verification.</p>
-      </article></div>
-    </section>
+  <aside class="sponsor-ticker" aria-label="Sponsor opportunities"><div class="sponsor-ticker-track">
+    <div class="sponsor-ticker-group"><span>Our generous sponsors</span><span class="ticker-flower" aria-hidden="true">✿</span><span>Your brand could be here!</span><span class="ticker-flower" aria-hidden="true">✦</span><a href="sponsors.html">Support student entrepreneurs <span aria-hidden="true">↗</span></a><span class="ticker-flower" aria-hidden="true">♡</span></div>
+    <div class="sponsor-ticker-group" aria-hidden="true"><span>Our generous sponsors</span><span class="ticker-flower">✿</span><span>Your brand could be here!</span><span class="ticker-flower">✦</span><a href="sponsors.html" tabindex="-1">Support student entrepreneurs <span>↗</span></a><span class="ticker-flower">♡</span></div>
+  </div></aside>
+  <main>
+    <section class="page-hero"><p class="eyebrow">the scoop, answered</p><h1>Curious about <span>Sorbeez?</span></h1><p>Here are a few helpful notes about our student business idea and what this website demo can—and can’t—do.</p></section>
+    <section class="content-section"><div class="faq-list">
+      <details class="faq-item"><summary>What is Sorbeez?</summary><div class="faq-answer">Sorbeez is a student-created fruit sorbet business concept from Redondo Union High School. The flavors and shopping bag on this site are concept demonstrations; the product is not currently for sale.</div></details>
+      <details class="faq-item"><summary>Is Sorbeez dairy-free?</summary><div class="faq-answer">We can’t confirm that yet. Recipes have not been finalized, and no allergen testing or manufacturing review has been completed. Please don’t rely on a concept page to assess food allergies or dietary needs.</div></details>
+      <details class="faq-item"><summary>How does Sorbeez aid kids’ digestion?</summary><div class="faq-answer">Digestive health is part of the idea behind Sorbeez, but no finished recipe, probiotic amount, fiber amount, digestive-enzyme activity, or health benefit has been verified. Sorbeez is not a treatment for digestive conditions. We would need appropriate formulation, testing, and expert review before making nutrition or health claims.</div></details>
+      <details class="faq-item"><summary>Does every flavor have multivitamins or probiotics?</summary><div class="faq-answer">Those are inspirations for the concept, not confirmed product ingredients. We don’t currently have a validated nutrition panel or confirmed probiotic or vitamin amounts for any flavor.</div></details>
+      <details class="faq-item"><summary>Where are you located?</summary><div class="faq-answer">Sorbeez is a student business project at Redondo Union High School in Redondo Beach, California. This page is not a retail or business mailing address.</div></details>
+      <details class="faq-item"><summary>Where can I buy Sorbeez?</summary><div class="faq-answer">You can’t purchase Sorbeez through this site. It is an educational project, not a live store, and the cart only saves flavor selections in your browser for demonstration.</div></details>
+      <details class="faq-item"><summary>Does the shopping bag place an order?</summary><div class="faq-answer">No. The bag counter is a small local demo, with no checkout, payment processing, or order fulfillment. Your selection stays in this browser’s local storage until you clear it.</div></details>
+      <details class="faq-item"><summary>How can I support the student team?</summary><div class="faq-answer">Visit the <a href="sponsors.html"><strong>Sponsors page</strong></a> to learn about the project’s sponsorship idea. The form is a visual demo and does not send or save submissions.</div></details>
+    </div></section>
   </main>
-  <footer><div><div><a href="index.html">Sorbeez</a><p>© <span>2026</span> Sorbeez. Made with a little extra joy.</p></div><nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+  <footer class="site-footer"><div class="footer-main">
+    <div class="footer-brand"><a class="brand footer-logo" href="index.html" aria-label="Sorbeez home"><img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span></a><p>Little scoops. Big smiles.<br>A student business project with heart.</p></div>
+    <div class="footer-column"><b>Explore</b><a href="shop.html">Shop flavors</a><a href="story.html">Our story</a><a href="team.html">Meet the team</a><a href="faq.html">FAQs</a></div>
+    <div class="footer-column"><b>Say hello</b><a href="sponsors.html">Become a sponsor</a><a href="story.html">About the student team</a><span class="social-handle">@sorbeezofficial</span></div>
+    <div class="newsletter"><b>A little note from us ✉</b><p>Get project updates and a sprinkle of good news.</p><form data-newsletter-form><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Sign up">→</button></form><small data-newsletter-message aria-live="polite">Demo only—your email won’t be saved.</small></div>
+  </div><div class="footer-bottom"><span>© <span data-year>2026</span> Sorbeez</span><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div></footer>
+  <dialog class="cart-dialog" data-cart-dialog aria-labelledby="cart-title"><div class="dialog-top"><h2 id="cart-title">Your little bag <span>♡</span></h2><button class="icon-button" type="button" data-close-cart aria-label="Close cart">×</button></div><div class="cart-items" data-cart-items></div><div class="cart-bottom"><p data-cart-status aria-live="polite">This is a product concept—not a live checkout.</p><button class="button button-berry button-full" type="button" data-clear-cart>Clear bag</button></div></dialog>
 </body>
 </html>
