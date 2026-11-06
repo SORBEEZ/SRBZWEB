@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs><linearGradient id="lemon" x1="25" y1="25" x2="96" y2="94" gradientUnits="userSpaceOnUse"><stop stop-color="#fff17b"/><stop offset=".6" stop-color="#ffd84d"/><stop offset="1" stop-color="#f8b938"/></linearGradient></defs>
+  <path d="M60 22c11 9 29 11 39 23 13 16 3 45-13 57-15 11-37 11-52 0-16-12-26-41-13-57 10-12 28-14 39-23Z" fill="url(#lemon)" stroke="#d7a833" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M60 25c-1-9 4-15 12-19 2 9-2 15-10 20" fill="#78bb70" stroke="#558f59" stroke-linejoin="round" stroke-width="2.5"/>
+  <path d="M35 48c5-7 11-11 18-12" fill="none" stroke="#fff9c9" stroke-linecap="round" stroke-width="4" opacity=".9"/>
+  <ellipse cx="47" cy="65" rx="3.1" ry="4.2" fill="#514132"/><ellipse cx="72" cy="65" rx="3.1" ry="4.2" fill="#514132"/>
+  <circle cx="48" cy="63.5" r="1.1" fill="#fff"/><circle cx="73" cy="63.5" r="1.1" fill="#fff"/>
+  <ellipse cx="38" cy="75" rx="5.4" ry="2.8" fill="#ffb0a1" opacity=".75"/><ellipse cx="81" cy="75" rx="5.4" ry="2.8" fill="#ffb0a1" opacity=".75"/>
+  <path d="M54 77c3 5 9 5 12 0" fill="none" stroke="#514132" stroke-linecap="round" stroke-width="2.8"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs><linearGradient id="peach" x1="29" y1="34" x2="91" y2="91" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd18c"/><stop offset=".55" stop-color="#ff9a83"/><stop offset="1" stop-color="#ef7184"/></linearGradient></defs>
+  <path d="M59 37c-25-24-51-1-43 29 5 19 22 40 43 41 22-1 39-22 44-41 8-30-18-53-44-29Z" fill="url(#peach)" stroke="#ce6c68" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M59 39c3 10 4 20 3 31-1 15-4 27-9 35" fill="none" stroke="#e87570" stroke-linecap="round" stroke-width="2.5" opacity=".75"/>
+  <path d="M58 34c-1-12 5-20 15-25 2 11-3 20-13 27" fill="#74b86d" stroke="#528c59" stroke-linejoin="round" stroke-width="2.5"/>
+  <path d="M34 49c5-6 10-9 17-10" fill="none" stroke="#fff0ca" stroke-linecap="round" stroke-width="4" opacity=".8"/>
+  <ellipse cx="46" cy="66" rx="3.1" ry="4.2" fill="#49333a"/><ellipse cx="71" cy="66" rx="3.1" ry="4.2" fill="#49333a"/>
+  <circle cx="47" cy="64.5" r="1.1" fill="#fff"/><circle cx="72" cy="64.5" r="1.1" fill="#fff"/>
+  <ellipse cx="37" cy="76" rx="5.4" ry="2.8" fill="#ffbdba" opacity=".85"/><ellipse cx="80" cy="76" rx="5.4" ry="2.8" fill="#ffbdba" opacity=".85"/>
+  <path d="M53 77c3 5 9 5 12 0" fill="none" stroke="#49333a" stroke-linecap="round" stroke-width="2.8"/>
+</svg>
