@@ -3,25 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The page you requested could not be found on the Sorbeez website.">
-  <title>Page Not Found — Sorbeez</title>
+  <meta name="theme-color" content="#fffdf6">
+  <meta name="description" content="Oops, this page wandered off. Play a quick fruit matching game or head back to Sorbeez.">
+  <title>Page not found — Sorbeez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">A little more fruit, a lot more fun <span aria-hidden="true">✦</span> dreamed up by student entrepreneurs</div>
   <header class="site-header">
-    <nav class="nav-wrap" aria-label="Main navigation">
-      <a class="brand" href="index.html">Sorbeez</a>
-      <div class="nav-links">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Sorbeez home">
+        <img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation">☰</button>
+      <div class="nav-links" id="primary-links">
         <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="story.html">Our Story</a><a href="sponsors.html">Sponsors</a><a href="team.html">Team</a><a href="faq.html">FAQ</a>
       </div>
+      <div class="nav-actions"><a class="button button-small button-peach" href="shop.html">Shop flavors</a></div>
     </nav>
   </header>
-  <main id="main">
-    <h1>Oops! This page is missing.</h1>
-    <p>We couldn’t find the page you were looking for. It may have moved or the address may be incorrect.</p>
-    <p><a class="button button-soft" href="index.html">Go to the Sorbeez homepage</a></p>
+  <aside class="sponsor-ticker" aria-label="Sponsor opportunities"><div class="sponsor-ticker-track">
+    <div class="sponsor-ticker-group"><span>Our generous sponsors</span><span class="ticker-flower" aria-hidden="true">✿</span><span>Your brand could be here!</span><span class="ticker-flower" aria-hidden="true">✦</span><a href="sponsors.html">Support student entrepreneurs <span aria-hidden="true">↗</span></a><span class="ticker-flower" aria-hidden="true">♡</span></div>
+    <div class="sponsor-ticker-group" aria-hidden="true"><span>Our generous sponsors</span><span class="ticker-flower">✿</span><span>Your brand could be here!</span><span class="ticker-flower">✦</span><a href="sponsors.html" tabindex="-1">Support student entrepreneurs <span>↗</span></a><span class="ticker-flower">♡</span></div>
+  </div></aside>
+  <main class="not-found-main">
+    <section class="not-found section-wrap" aria-labelledby="not-found-title">
+      <div class="not-found-copy">
+        <p class="eyebrow"><span class="eyebrow-sparkle" aria-hidden="true">✳</span> a little detour</p>
+        <p class="not-found-code" aria-hidden="true">4<span>0</span>4</p>
+        <h1 id="not-found-title">Oops! This scoop<br>is <span>out of place.</span></h1>
+        <p class="not-found-description">Looks like this page wandered off to find a fruit buddy. Match a few while you’re here, or let’s get you back on track.</p>
+        <a class="button button-berry" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
+        <div class="not-found-fruit" aria-hidden="true"><img src="images/fruit-peach.svg" alt=""><span>✦</span></div>
+      </div>
+      <section class="game-card not-found-game" aria-labelledby="not-found-game-title">
+        <div class="game-heading">
+          <span class="game-icon"><img src="images/fruit-strawberry.svg" alt=""></span>
+          <div><h2 id="not-found-game-title">Fruit-face match</h2><p>Find all three fruity pairs!</p></div>
+        </div>
+        <div class="memory-grid" data-memory-grid aria-label="Fruit matching game">
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 1, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-strawberry.svg" alt=""></span></span></button>
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 2, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-citrus.svg" alt=""></span></span></button>
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 3, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-mango.svg" alt=""></span></span></button>
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 4, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-strawberry.svg" alt=""></span></span></button>
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 5, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-citrus.svg" alt=""></span></span></button>
+          <button class="memory-card" type="button" data-memory-card aria-label="Fruit card 6, hidden" aria-pressed="false"><span class="memory-card-inner"><span class="memory-card-back" aria-hidden="true">?</span><span class="memory-card-front" aria-hidden="true"><img src="images/fruit-mango.svg" alt=""></span></span></button>
+        </div>
+        <div class="game-status-row"><p data-memory-status aria-live="polite">Find the matching fruit buddies!</p><span data-memory-score>0 / 3 pairs</span></div>
+        <button class="game-reset" type="button" data-memory-reset>Shuffle &amp; play again ↻</button>
+      </section>
+    </section>
   </main>
-  <footer class="site-footer"><div class="footer-wrap"><a class="footer-brand" href="index.html">Sorbeez</a><nav class="footer-links" aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand footer-logo" href="index.html" aria-label="Sorbeez home"><img src="images/sorbeez-logo.png" alt="Sorbeez" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="brand-fallback" hidden>Sorbeez<span class="brand-dot">.</span></span></a><p>Little scoops. Big smiles.<br>A student business project with heart.</p></div>
+      <div class="footer-column"><b>Explore</b><a href="shop.html">Shop flavors</a><a href="story.html">Our story</a><a href="team.html">Meet the team</a><a href="faq.html">FAQs</a></div>
+      <div class="footer-column"><b>Say hello</b><a href="sponsors.html">Become a sponsor</a><a href="story.html">About the student team</a><span class="social-handle">@sorbeezofficial</span></div>
+      <div class="newsletter"><b>A little note from us ✉</b><p>Get project updates and a sprinkle of good news.</p><form data-newsletter-form><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Sign up">→</button></form><small data-newsletter-message aria-live="polite">Demo only—your email won’t be saved.</small></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year>2026</span> Sorbeez</span><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+  </footer>
 </body>
 </html>
