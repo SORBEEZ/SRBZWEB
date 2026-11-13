@@ -118,7 +118,7 @@ h1 .hero-pink { color: var(--bubblegum); }
 .mini-flavor small { color: #63565c; font-size: .76rem; }
 .mini-fruit { display: block; width: 92px; height: 92px; object-fit: contain; transition: transform .3s cubic-bezier(.2,.7,.2,1); }
 .mini-flavor:hover .mini-fruit { transform: rotate(-7deg) scale(1.1); }
-.mango { background: #fff0b8; }.strawberry { background: #ffe0e4; }.blueberry { background: #e8def6; }.watermelon { background: #d9efdf; }.peach { background: #ffdfc8; }.citrus { background: #fff4bf; }
+.mango { background: #fff0b8; }.strawberry { background: #ffe0e4; }.blueberry { background: #e8def6; }.watermelon { background: #d9efdf; }.pineapple { background: #fff0c4; }.citrus { background: #fff4bf; }
 .home-story { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 85px; padding-block: 28px 96px; }
 .story-blob { position: relative; width: min(100%, 380px); aspect-ratio: 1; margin: auto; border-radius: 47% 53% 62% 38% / 43% 42% 58% 57%; background: var(--mint); transform: rotate(-5deg); }
 .story-scribble { position: absolute; top: 22%; left: 22%; color: var(--berry-ink); font-family: Fredoka, sans-serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 600; line-height: .9; transform: rotate(-10deg); }
@@ -225,9 +225,8 @@ h1 .hero-pink { color: var(--bubblegum); }
 .team-department { margin: 30px 0 40px; }.department-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
 .department-heading h2 { margin: 0; font-size: 1.65rem; }.department-heading span { color: var(--muted); font-size: .82rem; font-weight: 700; }
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.team-card { min-height: 117px; padding: 17px; border-radius: 16px; background: white; box-shadow: 0 5px 18px rgba(70,40,60,.05); }
-.team-avatar { display: grid; width: 34px; height: 34px; place-items: center; margin-bottom: 9px; border-radius: 12px; background: var(--mint); color: var(--berry-ink); font-family: Fredoka, sans-serif; font-weight: 600; }
-.team-card:nth-child(3n+2) .team-avatar { background: var(--pink); }.team-card:nth-child(3n) .team-avatar { background: #fff0b8; }
+.team-card { min-height: 205px; padding: 17px; border-radius: 16px; background: white; box-shadow: 0 5px 18px rgba(70,40,60,.05); }
+.team-photo { display: block; width: 100%; aspect-ratio: 1; margin-bottom: 13px; border-radius: 13px; background: var(--cream-deep); object-fit: cover; object-position: center 35%; }
 .team-card h3 { margin: 0 0 3px; font-family: "DM Sans", sans-serif; font-size: .93rem; letter-spacing: 0; }.team-card p { margin: 0; color: var(--muted); font-size: .78rem; }
 .faq-list { max-width: 790px; margin: auto; }.faq-item { margin-bottom: 12px; overflow: hidden; border: 1px solid #eee1e1; border-radius: 17px; background: white; }
 .faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 19px 20px; cursor: pointer; font-family: Fredoka, sans-serif; font-size: 1.13rem; font-weight: 600; list-style: none; }

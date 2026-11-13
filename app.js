@@ -2,7 +2,7 @@
 
 const flavors = {
   mango: {
-    name: "Mango glow", image: "images/fruit-mango.svg", color: "#fff0b8",
+    name: "Mango Glow", image: "images/fruit-mango.svg", color: "#fff0b8",
     ingredient: "Mango is the fruit spotlight for this flavor concept.",
     vitamins: "Mango naturally contains vitamin C and other nutrients; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -10,7 +10,7 @@ const flavors = {
     advantage: "A bright, fruit-forward frozen cup designed for a fun, easy-to-portion snack."
   },
   strawberry: {
-    name: "Strawberry pop", image: "images/fruit-strawberry.svg", color: "#ffe0e4",
+    name: "Strawberry Pop", image: "images/fruit-strawberry.svg", color: "#ffe0e4",
     ingredient: "Strawberry is the fruit spotlight for this flavor concept.",
     vitamins: "Strawberries naturally contain vitamin C; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -18,7 +18,7 @@ const flavors = {
     advantage: "A berry-bright frozen cup designed to make fruit feel like a treat."
   },
   blueberry: {
-    name: "Blueberry swirl", image: "images/fruit-blueberry.svg", color: "#e8def6",
+    name: "Blueberry Swirl", image: "images/fruit-blueberry.svg", color: "#e8def6",
     ingredient: "Blueberry is the fruit spotlight for this flavor concept.",
     vitamins: "Blueberries naturally contain vitamin C and vitamin K; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -26,23 +26,23 @@ const flavors = {
     advantage: "A colorful, spoonable frozen snack concept with a mellow berry character."
   },
   watermelon: {
-    name: "Melon mood", image: "images/fruit-watermelon.svg", color: "#d9efdf",
+    name: "Melon Mood", image: "images/fruit-watermelon.svg", color: "#d9efdf",
     ingredient: "Watermelon is the fruit spotlight for this flavor concept.",
     vitamins: "Watermelon naturally contains vitamin C and vitamin A precursors; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
     enzymes: "No digestive-enzyme amount or benefit has been verified for this concept.",
     advantage: "A cool, juicy frozen cup concept that makes an easy-to-enjoy snack."
   },
-  peach: {
-    name: "Peachy keen", image: "images/fruit-peach.svg", color: "#ffdfc8",
-    ingredient: "Peach is the fruit spotlight for this flavor concept.",
-    vitamins: "Peaches naturally contain vitamin C and vitamin A precursors; amounts in a finished recipe are not yet verified.",
+  pineapple: {
+    name: "Pineapple Pop", image: "images/fruit-pineapple.svg", color: "#fff0c4",
+    ingredient: "Pineapple is the fruit spotlight for this flavor concept.",
+    vitamins: "Pineapple naturally contains vitamin C and other nutrients; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
     enzymes: "No digestive-enzyme amount or benefit has been verified for this concept.",
-    advantage: "A soft, sunny frozen cup concept sized for a cheerful snack break."
+    advantage: "A bright, tropical frozen cup concept sized for a cheerful snack break."
   },
   citrus: {
-    name: "Citrus sparkle", image: "images/fruit-citrus.svg", color: "#fff4bf",
+    name: "Lemon-Aid", image: "images/fruit-citrus.svg", color: "#fff4bf",
     ingredient: "Citrus is the fruit spotlight for this flavor concept.",
     vitamins: "Citrus fruits naturally contain vitamin C; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -63,6 +63,12 @@ function getCart() {
   const parsed = JSON.parse(raw);
   if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
     throw new Error("Saved cart data is not valid.");
+  }
+  if (Object.hasOwn(parsed, "peach")) {
+    if (Number.isInteger(parsed.peach) && parsed.peach > 0) {
+      parsed.pineapple = (Number.isInteger(parsed.pineapple) && parsed.pineapple > 0 ? parsed.pineapple : 0) + parsed.peach;
+    }
+    delete parsed.peach;
   }
   return parsed;
 }
@@ -290,7 +296,7 @@ function resetMemoryGame() {
   memoryLocked = false;
   memoryMoves = 0;
   memoryPairs = 0;
-  const fruits = shuffle(["strawberry", "strawberry", "citrus", "citrus", "mango", "mango"]);
+  const fruits = shuffle(["strawberry", "strawberry", "citrus", "citrus", "pineapple", "pineapple"]);
   memoryCards.forEach((card, index) => {
     card.dataset.fruit = fruits[index];
     card.classList.remove("is-revealed", "is-matched");
@@ -309,7 +315,7 @@ function turnMemoryCard(card) {
   card.classList.add("is-revealed");
   card.setAttribute("aria-pressed", "true");
   const index = memoryCards.indexOf(card) + 1;
-  const fruitName = { strawberry: "strawberry", citrus: "citrus", mango: "mango" }[card.dataset.fruit];
+  const fruitName = { strawberry: "strawberry", citrus: "citrus", pineapple: "pineapple" }[card.dataset.fruit];
   card.setAttribute("aria-label", `Fruit card ${index}, ${fruitName}`);
 
   if (!memoryFirstCard) {
@@ -348,12 +354,12 @@ document.querySelector("[data-memory-reset]")?.addEventListener("click", resetMe
 if (memoryCards.length === 6) resetMemoryGame();
 
 const quizFlavors = [
-  { id: "mango", name: "Mango glow", hint: "I’m a tropical fruit with one oversized stone, and my juice likes to make a mess." },
-  { id: "strawberry", name: "Strawberry pop", hint: "I keep my tiny seeds on the outside—a rather unusual place to put them." },
-  { id: "blueberry", name: "Blueberry swirl", hint: "I’m a tiny indigo fruit whose name suggests a color, though wild relatives can wear other shades." },
-  { id: "watermelon", name: "Melon mood", hint: "My striped jacket hides a picnic-colored center. I’m technically a berry, though most people don’t call me one." },
-  { id: "peach", name: "Peachy keen", hint: "A fuzzy cheek, one hard center, and a short season make me a summertime favorite." },
-  { id: "citrus", name: "Citrus sparkle", hint: "Peel me and the scent arrives before the juice; my segments make sharing easy." }
+  { id: "mango", name: "Mango Glow", hint: "I’m a tropical fruit with one oversized stone, and my juice likes to make a mess." },
+  { id: "strawberry", name: "Strawberry Pop", hint: "I keep my tiny seeds on the outside—a rather unusual place to put them." },
+  { id: "blueberry", name: "Blueberry Swirl", hint: "I’m a tiny indigo fruit whose name suggests a color, though wild relatives can wear other shades." },
+  { id: "watermelon", name: "Melon Mood", hint: "My striped jacket hides a picnic-colored center. I’m technically a berry, though most people don’t call me one." },
+  { id: "pineapple", name: "Pineapple Pop", hint: "My spiky crown sits above a golden, diamond-patterned coat. I travel in a bunch, but grow as one fruit." },
+  { id: "citrus", name: "Lemon-Aid", hint: "Peel me and the scent arrives before the juice; my segments make sharing easy." }
 ];
 const quizHint = document.querySelector("[data-quiz-hint]");
 const quizChoices = document.querySelector("[data-quiz-choices]");
