@@ -52,6 +52,14 @@ const flavors = {
 };
 
 const CART_KEY = "sorbeez-cart-v1";
+const veBuyLinks = {
+  mango: "https://portal.veinternational.org/buybuttons/us0110779/btn/mango-glow-2/",
+  strawberry: "https://portal.veinternational.org/buybuttons/us0110779/btn/strawberry-pop-1/",
+  blueberry: "https://portal.veinternational.org/buybuttons/us0110779/btn/blueberry-swirls-3/",
+  watermelon: "https://portal.veinternational.org/buybuttons/us0110779/btn/melon-mood-4/",
+  pineapple: "https://portal.veinternational.org/buybuttons/us0110779/btn/pineapple-pop-5/",
+  citrus: "https://portal.veinternational.org/buybuttons/us0110779/btn/lemon-aid-6/"
+};
 const countElements = document.querySelectorAll("[data-cart-count]");
 const cartDialog = document.querySelector("[data-cart-dialog]");
 const cartItemsElement = document.querySelector("[data-cart-items]");
@@ -126,17 +134,12 @@ function renderCart() {
 }
 
 function addToCart(id) {
-  if (!flavors[id]) return;
-  try {
-    const cart = getCart();
-    cart[id] = (Number.isInteger(cart[id]) && cart[id] > 0 ? cart[id] : 0) + 1;
-    localStorage.setItem(CART_KEY, JSON.stringify(cart));
-    renderCart();
-    const message = document.querySelector("[data-add-status]");
-    if (message) message.textContent = `${flavors[id].name} added to your bag.`;
-  } catch (error) {
-    reportCartError(error);
+  const buyLink = veBuyLinks[id];
+  if (!buyLink) {
+    console.error("VE Marketplace link not found:", id);
+    return;
   }
+  window.location.assign(buyLink);
 }
 
 function showFlavor(id) {
