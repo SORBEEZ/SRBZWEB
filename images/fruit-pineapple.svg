@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="pineapple" x1="30" y1="31" x2="89" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe777"/><stop offset=".58" stop-color="#ffc84f"/><stop offset="1" stop-color="#f2a83f"/></linearGradient>
+    <linearGradient id="leaf" x1="50" y1="12" x2="74" y2="43" gradientUnits="userSpaceOnUse"><stop stop-color="#a8d778"/><stop offset="1" stop-color="#57975b"/></linearGradient>
+  </defs>
+  <path d="M56 39c-18-1-30 14-29 34 1 22 13 37 33 37s32-15 33-37c1-20-11-35-29-34" fill="url(#pineapple)" stroke="#b87735" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M59 40c-8-12-7-25-3-34 10 8 14 19 10 33 4-15 13-23 23-26-1 14-8 25-21 32 12-9 24-11 34-7-6 13-17 19-33 18" fill="url(#leaf)" stroke="#52834e" stroke-linejoin="round" stroke-width="2.5"/>
+  <path d="m38 52 6 6m14-8 5 7m14-4 5 6M34 70l7 5m15-7 6 6m15-6 6 5m-45 11 7 5m14-7 6 6m14-7 7 5" fill="none" stroke="#dc9740" stroke-linecap="round" stroke-width="2.2" opacity=".8"/>
+  <ellipse cx="48" cy="73" rx="3.1" ry="4.3" fill="#49333a"/><ellipse cx="70" cy="73" rx="3.1" ry="4.3" fill="#49333a"/>
+  <circle cx="49" cy="71.5" r="1.1" fill="#fff"/><circle cx="71" cy="71.5" r="1.1" fill="#fff"/>
+  <ellipse cx="39" cy="82" rx="5.2" ry="2.8" fill="#ff9d8e" opacity=".7"/><ellipse cx="79" cy="82" rx="5.2" ry="2.8" fill="#ff9d8e" opacity=".7"/>
+  <path d="M54 83c3 5 9 5 12 0" fill="none" stroke="#49333a" stroke-linecap="round" stroke-width="2.8"/>
+</svg>
