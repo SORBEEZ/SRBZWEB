@@ -161,7 +161,7 @@ h1 .hero-pink { color: var(--bubblegum); }
 .flavor-card { overflow: hidden; border: 1px solid rgba(70, 40, 60, .06); border-radius: 26px; background: white; box-shadow: 0 7px 23px rgba(70,40,60,.06); transition: transform .22s ease, box-shadow .22s ease; }
 .flavor-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
 .flavor-visual { position: relative; min-height: 205px; display: grid; place-items: center; }
-.flavor-visual > img { width: 138px; height: 138px; object-fit: contain; filter: drop-shadow(0 9px 7px rgba(50,30,45,.11)); transition: transform .3s ease; }
+.flavor-visual > img { width: 138px; height: 172px; border-radius: 18px; object-fit: cover; mix-blend-mode: multiply; filter: drop-shadow(0 9px 7px rgba(50,30,45,.11)); transition: transform .3s ease; }
 .flavor-card:hover .flavor-visual > img { transform: scale(1.09) rotate(-5deg); }
 .flavor-visual::before, .flavor-visual::after { position: absolute; width: 70px; height: 70px; border: 2px solid rgba(107,48,116,.18); border-radius: 50%; content: ""; }
 .flavor-visual::before { top: 20px; left: 25px; }.flavor-visual::after { right: 22px; bottom: 15px; width: 43px; height: 43px; }
@@ -180,7 +180,7 @@ h1 .hero-pink { color: var(--bubblegum); }
 .dialog-top h2 { margin: 0; font-size: 1.65rem; }
 .icon-button { width: 38px; height: 38px; border: 0; border-radius: 50%; background: #f3e8ec; color: var(--berry-ink); font-size: 1.5rem; line-height: 1; }
 .flavor-modal-banner { padding: 25px; text-align: center; }
-.flavor-modal-banner img { display: block; width: 126px; height: 126px; margin: auto; object-fit: contain; filter: drop-shadow(0 8px 8px rgba(50,30,45,.12)); }
+.flavor-modal-banner img { display: block; width: 126px; height: 158px; margin: auto; border-radius: 14px; object-fit: cover; mix-blend-mode: multiply; filter: drop-shadow(0 8px 8px rgba(50,30,45,.12)); }
 .flavor-modal-banner h2 { margin: 7px 0 0; font-size: 2rem; }
 .modal-details { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 22px 22px; }
 .detail-tile { padding: 14px; border-radius: 16px; background: white; }

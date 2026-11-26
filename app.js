@@ -2,7 +2,7 @@
 
 const flavors = {
   mango: {
-    name: "Mango Glow", image: "images/fruit-mango.svg", color: "#fff0b8",
+    name: "Mango Glow", image: "images/packaging/mango.jpg", color: "#fff0b8",
     ingredient: "Mango is the fruit spotlight for this flavor concept.",
     vitamins: "Mango naturally contains vitamin C and other nutrients; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -10,7 +10,7 @@ const flavors = {
     advantage: "A bright, fruit-forward frozen cup designed for a fun, easy-to-portion snack."
   },
   strawberry: {
-    name: "Strawberry Pop", image: "images/fruit-strawberry.svg", color: "#ffe0e4",
+    name: "Strawberry Pop", image: "images/packaging/strawberry.jpg", color: "#ffe0e4",
     ingredient: "Strawberry is the fruit spotlight for this flavor concept.",
     vitamins: "Strawberries naturally contain vitamin C; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -18,7 +18,7 @@ const flavors = {
     advantage: "A berry-bright frozen cup designed to make fruit feel like a treat."
   },
   blueberry: {
-    name: "Blueberry Swirl", image: "images/fruit-blueberry.svg", color: "#e8def6",
+    name: "Blueberry Swirl", image: "images/packaging/blueberry.jpg", color: "#e8def6",
     ingredient: "Blueberry is the fruit spotlight for this flavor concept.",
     vitamins: "Blueberries naturally contain vitamin C and vitamin K; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -26,7 +26,7 @@ const flavors = {
     advantage: "A colorful, spoonable frozen snack concept with a mellow berry character."
   },
   watermelon: {
-    name: "Melon Mood", image: "images/fruit-watermelon.svg", color: "#d9efdf",
+    name: "Melon Mood", image: "images/packaging/watermelon.jpg", color: "#d9efdf",
     ingredient: "Watermelon is the fruit spotlight for this flavor concept.",
     vitamins: "Watermelon naturally contains vitamin C and vitamin A precursors; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -34,7 +34,7 @@ const flavors = {
     advantage: "A cool, juicy frozen cup concept that makes an easy-to-enjoy snack."
   },
   pineapple: {
-    name: "Pineapple Pop", image: "images/fruit-pineapple.svg", color: "#fff0c4",
+    name: "Pineapple Pop", image: "images/packaging/pineapple.jpg", color: "#fff0c4",
     ingredient: "Pineapple is the fruit spotlight for this flavor concept.",
     vitamins: "Pineapple naturally contains vitamin C and other nutrients; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
@@ -42,7 +42,7 @@ const flavors = {
     advantage: "A bright, tropical frozen cup concept sized for a cheerful snack break."
   },
   citrus: {
-    name: "Lemon-Aid", image: "images/fruit-citrus.svg", color: "#fff4bf",
+    name: "Lemon-Aid", image: "images/packaging/citrus.jpg", color: "#fff4bf",
     ingredient: "Citrus is the fruit spotlight for this flavor concept.",
     vitamins: "Citrus fruits naturally contain vitamin C; amounts in a finished recipe are not yet verified.",
     fiber: "Per-serving fiber is not yet established; see a finalized nutrition label when available.",
